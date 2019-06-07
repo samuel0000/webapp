@@ -1,0 +1,22 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel0000/webapp.git"
+  },
+  "author": "samuel kagocha <samuelkagocha4@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuel0000/webapp/issues"
+  },
+  "homepage": "https://github.com/samuel0000/webapp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
