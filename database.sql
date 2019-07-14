@@ -1,21 +1,32 @@
 create database library;
 
-CREATE TABLE student
+
+CREATE TABLE library
 (
-  student_id INT(10) auto_increment NOT NULL,
-  name VARCHAR(20) NOT NULL,
-  phone_no INT(10) NOT NULL,
-  email VARCHAR(20) NOT NULL,
-  PRIMARY KEY (student_id)
+  library_id INT(10) auto_increment NOT NULL,
+  name varchar(50) NOT NULL,
+  phone_no varchar(12) NOT NULL,
+  email varchar(15) NOT NULL,
+  PRIMARY KEY (library_id)
 );
 
 CREATE TABLE book
 (
-  book_title VARCHAR(20) NOT NULL,
-  book_id INT(10) auto_increment NOT NULL,
-  book_genre VARCHAR(20) NOT NULL,
-  image VARCHAR(20) NOT NULL,
-  student_id INT(10) NOT NULL,
-  PRIMARY KEY (book_id),
-  FOREIGN KEY (student_id) REFERENCES student(student_id)
+  book_title varchar(50) NOT NULL,
+  book_id varchar(20) NOT NULL,
+  book_genre varchar(50) NOT NULL,
+  image varchar(50) NOT NULL,
+  PRIMARY KEY (book_id)
 );
+
+CREATE TABLE lender
+(
+  id INT(50) auto_increment NOT NULL,
+  library_id INT(10),
+  book_id VARCHAR(20) ,
+  PRIMARY KEY (id, library_id, book_id),
+  FOREIGN KEY (library_id) REFERENCES library(library_id),
+  FOREIGN KEY (book_id) REFERENCES book(book_id)
+);
+
+

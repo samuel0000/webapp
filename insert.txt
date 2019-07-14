@@ -1,0 +1,9 @@
+INSERT INTO book;
+(1pettles, 1, poem, www.lkl.com,001 )
+(2.african sun, 2, fiction, www.lkp.com, 002)
+(3.if tomorrow comes, 3, drama, www.pop.com, 003)
+
+INSERT INTO student;
+(1.1, ali, 0700000001, ali@gmail.com)
+(2.2, hassan, 0700000002, hassan@gmail.com)
+(3.3,hassan, 07000000003, hassan@gmail.com)
